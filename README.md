@@ -1,6 +1,6 @@
 # Animated Object
 
-Animate Object is a package that provide tools to create animation using custom element.
+Animated Object is a package that provide tools to create animation using custom element.
 
 ## Installation
 
