@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - animate-object</title>
+    <style>
+
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 32px;
+            font-family: "Inter", sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        h1, h2, h3, p {
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .special {
+            color: red;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            padding: 32px;
+        }
+
+        text-animate:not(:defined) {
+            display: none;
+        }
+        text-animate:defined {
+            display: block;
+        }
+
+    </style>
+    <script type="module" src="./../dist/bundle.min.js"></script>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="container">
+        <text-animate as="p" animation="text-to-top" follow>
+            Test using character like <b>'g'</b>, or <b>'y'</b>
+        </text-animate>
+    </div>
+    <div class="container">
+        <text-animate as="h1" animation="text-to-top" follow>
+            Let’s make something amazing together 
+        </text-animate>
+    </div>
+    <!-- <div style="width: 100vw; height: 100vh;"></div>
+    <div style="width: 100vw; height: 100vh; padding: 42px;">
+        <text-animate animation='text-to-top' delay="100" follow>
+            <h1>Welcome in the website <span class="special">RBlog</span> </h1>
+        </text-animate>
+    </div> -->
+</body>
+</html>

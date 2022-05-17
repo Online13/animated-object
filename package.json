@@ -1,0 +1,31 @@
+{
+  "name": "animated-object",
+  "version": "1.1.6",
+  "author": "RATIARIVELO Nekena Rayane",
+  "description": "Animate our html with custom element easily.",
+  "main": "./dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "rollup --config --watch --environment NODE_ENV:development",
+    "build": "rollup --config --environment NODE_ENV:production",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [
+    "animation",
+    "custom element",
+    "js",
+    "animate-object",
+    "ts"
+  ],
+  "license": "ISC",
+  "types": "./dist/index.d.ts",
+  "prepublish": "tsc",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.2",
+    "rollup": "^2.73.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.6.4"
+  }
+}
